@@ -1,11 +1,20 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello World! ");
+﻿Console.Write("Insira o seu nome: ");
 
-int i;
-int i2 = i = 10;
-i2--;
+string name = Console.ReadLine();
 
-//Ternary operator
-i = i2 == 42 ? 10 : 20;
+Console.WriteLine($"Olá {name}!");
+Console.Write("Digite o ano do seu nascimento: ");
 
-Console.WriteLine(i2--);
+int year = int.Parse(Console.ReadLine());
+int age = 2022 - year; // +, -, *, /
+
+Console.WriteLine($"Você tem {age} anos.");
+
+if (age >= 18) 
+{
+    Console.WriteLine("Você é maior de idade");
+}
+else 
+{
+    Console.WriteLine("Você não é maior de idade");
+} 
